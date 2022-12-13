@@ -6,6 +6,8 @@ import (
 	"net/http"
 	"os"
 	"path/filepath"
+	"strconv"
+	"time"
 )
 
 type Mode int
@@ -44,7 +46,9 @@ func downloadImage(url string) (string, error) {
 		return "", err
 	}
 
-	file, err := os.Create(filepath.Join(cacheDir, "wallpaper"))
+	tsNano := strconv.FormatInt(time.Now().UnixNano()/1e6, 10)
+	file, err := os.Create(filepath.Join(cacheDir, "wallpaper"+"-"+tsNano))
+
 	if err != nil {
 		return "", err
 	}
