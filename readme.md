@@ -1,11 +1,13 @@
-# wallpaper [![godoc](https://godoc.org/github.com/reujab/wallpaper?status.svg)](https://godoc.org/github.com/reujab/wallpaper)
+# wallpaper [![godoc](https://godoc.org/github.com/OlegGulevskyy/wallpaper?status.svg)](https://godoc.org/github.com/reujab/wallpaper)
+
+This is a fork of - https://github.com/reujab/wallpaper
 
 A cross-platform (Linux, Windows, and macOS) Golang library for getting and setting the desktop background.
 
 ## Installation
 
 ```sh
-go get github.com/reujab/wallpaper
+go get github.com/OlegGulevskyy/wallpaper
 ```
 
 ## Example
@@ -16,7 +18,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/reujab/wallpaper"
+	"github.com/OlegGulevskyy/wallpaper"
 )
 
 func main() {
